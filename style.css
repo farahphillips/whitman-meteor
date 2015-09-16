@@ -1,4 +1,11 @@
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(/roboto/Roboto-Thin.ttf);
+}
+
 * {
+  font-family: Roboto-Thin;
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,30 +15,37 @@ body {
   background-image: url("/mountain.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #393e51;
   color: white;
 }
 
 .text {
   color: white;
-  font-family: Helvetica;
 }
 
 .header {
-  position: absolute;
+  position: relative;
   top:2%;
   left:25%;
+  width: 600px;
 }
 
 .poem {
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(57, 62, 81, .4);
+  border: 1px solid rgba(255, 255, 255, .3);
   padding: 2%;
   position: absolute;
-  top:10%;
-  left:25%;
+  top: 10%;
+  left: 25%;
   min-width: 600px;
   max-width: 600px;
-  min-height: auto;
+  min-height: 60%;
   max-height: 60%;
   overflow: auto;
   overflow-x: auto;
+}
+
+.poem:hover {
+  background-color: rgba(57, 62, 81, .9);
+  border: 0;
 }
